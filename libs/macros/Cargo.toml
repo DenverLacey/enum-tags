@@ -8,7 +8,6 @@ edition = "2021"
 [dependencies]
 syn = { version = "1.0.86", features = ["full", "extra-traits", "printing"] }
 quote = "1.0.15"
-enum-tags-traits = { path = "../traits" }
 
 [lib]
 proc-macro = true
