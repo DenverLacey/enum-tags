@@ -5,6 +5,8 @@ edition = "2021"
 repository = "https://github.com/DenverLacey/enum-tags"
 reamdme = "README.md"
 exclude = ["./tests/"]
+description = "A Derive-Macro library that generates a companion tag-enum for any enum so that variants can be referred to without specifying fields."
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
