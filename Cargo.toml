@@ -9,5 +9,5 @@ exclude = ["./tests/"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-enum-tags-macros = { path = "./libs/macros" }
-enum-tags-traits = { path = "./libs/traits" }
+enum-tags-macros = { version = "0.1.0", path = "./libs/macros" }
+enum-tags-traits = { version = "0.1.0", path = "./libs/traits" }
