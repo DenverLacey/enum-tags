@@ -2,6 +2,18 @@ use proc_macro::TokenStream;
 use quote::{format_ident, quote, quote_spanned};
 use syn::{parse_macro_input, DeriveInput};
 
+/// Procedural macro that generates the companion tag-enum and implements [`TaggedEnum`] trait for the given enum
+/// 
+/// # Example
+/// ```rust
+/// use enum_tags::*;
+/// #[derive(Tag)]
+/// enum MyEnum {
+/// 	A,
+/// 	B,
+/// 	C,
+/// }
+/// ```
 #[proc_macro_derive(Tag)]
 pub fn enum_tag(input: TokenStream) -> TokenStream {
 	let input = parse_macro_input!(input as DeriveInput);
